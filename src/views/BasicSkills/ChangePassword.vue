@@ -3,7 +3,7 @@
     <div class="ChangePassword_header">
       <div @click="returnClick()">
         <img src="@/assets/img/returnLeft.png" alt="" />
-        編輯密碼
+        變更密碼
       </div>
     </div>
     <!-- 輸入舊密碼 -->

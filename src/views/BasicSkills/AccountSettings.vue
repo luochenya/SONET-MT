@@ -3,7 +3,7 @@
     <div class="AccountSettings_header">
       <div @click="returnClick()">
         <img src="@/assets/img/returnLeft.png" alt="" />
-        帳號設定
+        個人資料
       </div>
     </div>
     <!-- 頭像，昵稱 -->

@@ -19,18 +19,18 @@
         <!-- <img src="@/assets/img/login1.png" alt="" /> 
         <img src="@/assets/img/login2.png" alt="" /> -->
         <fb-signin-button
+          class="Login_box_div_button1"
           :params="fbSignInParams"
           @success="onSignInSuccess"
           @error="onSignInError"
         >
-          <img src="@/assets/img/login1.png" alt="" />
+          <img src="@/assets/img/login11.png" alt="" />
+          使用Facebook帳號登入
         </fb-signin-button>
-        <img
-          v-google-signin-button="clientId"
-          class="google-signin-button"
-          src="@/assets/img/login2.png"
-          alt=""
-        />
+        <button v-google-signin-button="clientId" class="google-signin-button Login_box_div_button2">
+          <img src="@/assets/img/login22.png" alt="" />
+          使用Google登入
+        </button>
         <!-- <img src="@/assets/img/login3.png" alt="" />
         <img src="@/assets/img/login4.png" alt="" /> -->
         <div class="Login_box_div_box">
@@ -231,9 +231,9 @@ export default {
   }
   .Login_box {
     border-top: 2px solid #c0cad3;
-    padding: 0 13px;
+    // padding: 0 13px;
     .Login_box_h2 {
-      text-align: left;
+      // text-align: left;
       margin: 20px 0;
       font-size: 12px;
       font-weight: 400;
@@ -244,10 +244,40 @@ export default {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      img {
-        width: 90px;
+      .Login_box_div_button1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 48%;
         height: 32px;
-        margin-bottom: 10px;
+        background: #4267B2;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 16px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .Login_box_div_button2 {
+        display: flex;
+        align-items: center;
+        width: 48%;
+        height: 32px;
+        background: #4267B2;
+        border-radius: 1px;
+        font-size: 11px;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 16px;
+        img {
+          margin-left: 1px;
+          margin-right: 21px;
+          width: 31px;
+          height: 30px;
+        }
       }
       .Login_box_div_box {
         padding: 30px 15px;

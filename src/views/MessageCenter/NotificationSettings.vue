@@ -11,7 +11,7 @@
         <span>APP推播</span>
         <van-switch v-model="appChecked" active-color="#1DB3CE" inactive-color="#9BA1A9" size="24px" />
       </h1>
-      <h2>基本功能</h2>
+      <h2>系統通知</h2>
       <h3>
         <span>官方活動推播</span>
         <van-switch v-model="officialChecked" active-color="#1DB3CE" inactive-color="#9BA1A9" size="24px" />
